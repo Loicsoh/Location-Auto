@@ -1,3 +1,18 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*/
+
+
+section{
+    padding: 50px 100px ;
+}
+
+.btn{
+    color: var(--bg);
+    background-color: var(--accent);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
 *{
     margin: 0;
     padding: 0;
@@ -6,11 +21,12 @@
     scroll-behavior: smooth;
     border: none;
     box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
 }
 
 :root{
-    --accent :rgb(246,160,0);
-    --accent2 :rgb(189,124,2);
+    --accent :rgb(210,72,3);
+    --accent2 :rgb(159,56,1);
     --bg: #fff;
     --text: #060606;
 }
@@ -40,3 +56,120 @@ header nav ul li a{
     font-size: 1rem;
     padding: 10px 20px;
 }
+
+.inscription{
+    font-weight: 500;
+    background-color: var(--accent);
+    padding: 10px 20px;
+    border-radius: 7px;
+    columns: var(--bg);
+
+}
+
+.inscription:hover{
+    background-color: var(--accent2);
+}
+
+.home{
+    width: 100%;
+    min-height: 100vh;
+    /*
+    background-image: url('/images/bg-home.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;*/
+    
+
+    background: url('/images/bg-home.jpg') no-repeat center / cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--bg);
+}
+
+.home h1{
+    font-size: clamp(30px, 5vw,85px);/*justification de la taille de texte sur tout taille d'ecran*/
+    letter-spacing: 2px;
+}
+
+.home span{
+    color: var(--accent);
+}
+
+.apps-store img{
+        width: 155px;
+        cursor: pointer;
+}
+.home-form form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--bg);
+    color: var(--text);
+    padding: 20px;
+    border-radius: 7px;
+    position: absolute;
+    left: 120px;
+}
+
+.home-form .input-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.home-form .input-box input{
+    padding: 7px;
+    background-color: #c4b9b9;
+    border-radius: 7px;
+}
+
+.home-form .btn{
+    flex: 1 1 5.5rem;
+
+    /*flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 5.5rem;*/
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and(max-width:1024px) {
+    
+}
+@media screen and(max-width:768px) {
+    .home-form form{
+        position: unset;
+        width: 90%;
+        margin: 0 auto;
+
+    }
+}
+
+
+

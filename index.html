@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
-    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Location-Auto</title>
 </head>
 <body>
     <header>
@@ -27,9 +27,42 @@
 
     <div class="btn">
         <a href="#" class="inscription">
-            <i class="bx bxs-users"></i>
+            <i class='bx bxs-user'></i>
         </a>
     </div>
     </header>
+
+
+
+    <section id="home" class="home">
+        <div class="home-content">
+            <h1><span>ROULEZ l'EXPERIENCE<br</span>Location de voitures simplifiée</h1>
+            <p>Lorem ipsum dolor sit amet consectetur lit. Voluptatum eaque fugit illum amet quis ipsam fuga totam commodi. Quam soluta quod distinctio fugiat quas aliquid error minima quia iure eligendi.</p>
+
+
+            <div class="apps-store">
+                <img src="images/apple.png" alt="apple">
+                <img src="images/google.png" alt="google">
+            </div>
+        </div>
+
+        <div class="home-form">
+            <form action="#">
+                <div class="input-box">
+                    <label for="search">Emplacement</label>
+                    <input type="searsh" id="search" placeholder="Ou recherchez vous?">
+                </div>
+                <div class="input-box">
+                    <label for="date-int">Date de debut</label>
+                    <input type="date" id="date-in">
+                </div>
+                <div class="input-box">
+                    <label for="date-int">Date de Fin</label>
+                    <input type="date" id="date-out">
+                </div>
+                <input type="submit" value="Recherchez" class="btn">
+            </form>
+        </div>
+    </section>
 </body>
 </html>
