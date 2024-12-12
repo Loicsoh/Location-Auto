@@ -55,13 +55,19 @@ header nav ul{
 header nav ul li a{
     font-size: 1rem;
     padding: 10px 20px;
+    font-weight: bold;
+}
+
+header nav ul li a:hover{
+    border-top: 3px solid chocolate;
+    border-bottom: 3px solid chocolate;
+    transition: 0.5 all ease-in-out;
 }
 
 .inscription{
-    font-weight: 500;
-    background-color: var(--accent);
-    padding: 10px 20px;
     border-radius: 7px;
+    font-weight: 500;
+    padding: 10px 20px;
     columns: var(--bg);
 
 }
