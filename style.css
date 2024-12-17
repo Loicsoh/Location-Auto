@@ -139,12 +139,142 @@ header nav ul li a:hover{
 
 }
 
+.section-heading{
+    text-align: center;
+    margin: 3rem;
+}
+
+.section-heading span{
+    color: var(--accent);
+    font-weight: 500;
+}
+
+.section-heading h2{
+    font-size: clamp(25px, 4vw, 50px)
+}
+.cars-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(240px,auto));
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem
+}
+
+.cars-container .box-car{
+    text-align: center;
+    padding: 20px;
+    
+    background-color: var(--bg);
+    position: relative;
+    transition: background 1.2s ease-in-out;
+}
 
 
+.cars-container .box-car::after,
+.cars-container .box-car::before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: var(--accent);
+    z-index: -1;
+}
+
+.cars-container .box-car::after{
+    top: -0.2rem;
+    left: -0.2rem;
+}
+
+.cars-container .box-car::before{
+    bottom: -0.2rem;
+    rigth: -0.rem
+}
+
+.cars-container .box-car:hover .bx{
+    color: var(--accent2); 
+}
+
+.cars-container .box-car:hover{
+    background-color: cacaca;
+}
+
+.cars-container .box-car:hover::after,
+.cars-container .box-car:hover::before{
+    width: 100%;
+    height: 100%;
+}
+
+.cars-container .box-car .bx{
+    font-size: 3rem;
+}
+
+.cars-container .box-car.box-car:hover::before{
+    background-color: var(--accent);
+}
+
+.box-container{
+    margin: 3rem;
+}
+
+.box-container span{
+    color: var(--accent);
+    font-weight: 500;
+}
+
+.box-container h2{
+    font-size: clamp(25px, 4vw, 50px)
+}
 
 
+.box-container{
+    margin-top: 4rem;
+}
+
+.box{
+    max-width: 360px;
+    height: 440px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.15);
+}
 
 
+.box .img img{
+    width: 95%;
+    margin: 0.5rem 0.5rem;
+}
+
+.decription{
+    margin: 0.5rem 0.5rem;
+    line-height: 2.5rem;
+    
+}
+
+
+.decription span{
+    background-color: var(--accent2);
+    padding: 3px 15px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--bg);
+    border-radius: 9px;
+}
+
+.decription p{
+    color: var(--accent2);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.decription button{
+    color: var(--bg);
+    font-size: 1.5rem;
+    font-size: 25px;
+    padding: 8px 30px;
+    background-color: var(--accent2);
+    border-radius: 5px;
+    grid-row: 1;
+}
 
 
 
