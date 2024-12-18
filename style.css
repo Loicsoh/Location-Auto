@@ -34,13 +34,14 @@ section{
 header{
     width: 100%;
     position: sticky;
-    padding: 50px 100px;
+    padding: 50px 50px;
     top: 0;
     z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--bg);
+    box-shadow: 10px 1px 10px 1px  #060606;
 }
 
 header .logo img{
@@ -212,22 +213,14 @@ header nav ul li a:hover{
     background-color: var(--accent);
 }
 
-.box-container{
-    margin: 3rem;
-}
-
-.box-container span{
-    color: var(--accent);
-    font-weight: 500;
-}
-
-.box-container h2{
-    font-size: clamp(25px, 4vw, 50px)
-}
-
 
 .box-container{
-    margin-top: 4rem;
+    margin-top: 4;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(340px,auto));
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
 }
 
 .box{
@@ -236,6 +229,7 @@ header nav ul li a:hover{
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.15);
+    margin: 2px;
 }
 
 
@@ -275,6 +269,7 @@ header nav ul li a:hover{
     border-radius: 5px;
     grid-row: 1;
 }
+
 
 
 
