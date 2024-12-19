@@ -158,14 +158,13 @@ header nav ul li a:hover{
     grid-template-columns: repeat(auto-fit,minmax(240px,auto));
     align-items: center;
     gap: 2rem;
-    margin-top: 2rem
+    margin-top: 2rem;
+    background-color: var(--bg);
 }
 
 .cars-container .box-car{
     text-align: center;
-    padding: 20px;
-    
-    background-color: var(--bg);
+    padding: 2px;
     position: relative;
     transition: background 1.2s ease-in-out;
 }
@@ -188,7 +187,7 @@ header nav ul li a:hover{
 
 .cars-container .box-car::before{
     bottom: -0.2rem;
-    rigth: -0.rem
+    rigth: -0.1rem;
 }
 
 .cars-container .box-car:hover .bx{
